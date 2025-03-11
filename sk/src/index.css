@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Grape+Nuts&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poiret+One&family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: outfit;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.navbar{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app{
+  width: 80%;
+  margin: auto;
+}
+.logo{
+  width: 150px;
+
+}
+.navbar-menu{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+
+}
+.navebar-right{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar-button{
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar-button:hover{
+  background-color: #fff4f2;
+}
+.navbar .active{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+.navbar-menu li{
+  cursor: pointer;
+}
+.navbar-search-icon{
+position: relative;
+}
+.navbar-search-icon .dot{
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  top: -8px;
+  border-radius: 5px;
+  right: -8px;
+}
+.header{
+  height: 44vw;
+  margin: 30px auto;
+  background: url('/src/assets/main-banner.webp') no-repeat;
+
+  background-size: contain;
+  position: relative;
+}
+.header-content{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 30%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+.header-content h2{
+  font-weight: 400;
+  color: white;
+  font-size: max(4.3vw, 22px);
+}
+.header-content p{
+  color: white;
+  font-size: 1vw;
+}
+.header-content button{
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw,10px);
+  border-radius: 50px;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media (max-width:1050px){
+  .navbar .logo{
+      width: 140px;
+  }
+  .navbar-menu{
+      font-size: 17px;
+      gap: 20px;
+  }
+  .navebar-right{
+    gap: 30px;
+  }
+  .navebar-right img{
+    width: 20px;
+  }
+  .navebar-right  button{
+    padding: 8px 25px;
+  }
+  .header-content{
+    max-width: 45%;
+  }
+  .explore-menu-text{
+    max-width: 100%;
+    font-size: 14px;
+}
+}
+@media (max-width:900px){
+  .navbar .logo{
+      width: 120px;
+  }
+  .navbar-menu{
+      font-size: 17px;
+      gap: 15px;
+  }
+  .navebar-right{
+    gap: 20px;
+  }
+  .navebar-right img{
+    width: 20px;
+  }
+  .navebar-right  button{
+    padding: 7px 20px;
+font-size: 15px;
+  }
+}
+@media (max-width:750px){
+ 
+  .navbar-menu{
+      display: none;
+  }
+  .header-content{
+    max-width: 65%;
+  }
+  .header-content p{
+    display: none;
+  }.header-content button{
+    padding: 2vw 4vw;
+  }
+ 
+}
+@media (max-width:381px){
+  .header-content h2{
+    font-weight: 400;
+    color: white;
+    font-size: max(2.3vw, 15px);
+  }
+}
