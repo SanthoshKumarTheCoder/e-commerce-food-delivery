@@ -40,7 +40,7 @@ navigate("/")
             <hr/>
             <li onClick={logout}> <img src={assets.logout_icon} alt=''/><p>Logout</p></li>
             <hr/>
-            {/* <Link to={`http://localhost:5174/`}> <p>Admin</p></Link> */}
+    
             
        
           </ul>
