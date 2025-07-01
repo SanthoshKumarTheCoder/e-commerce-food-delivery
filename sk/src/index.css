@@ -80,6 +80,15 @@ position: relative;
   background-size: contain;
   position: relative;
 }
+.header-1{
+  display: none;
+  height: 44vw;
+  margin: 30px auto;
+  background: url('/src/assets/interface.webp') no-repeat;
+
+  background-size: contain;
+  position: relative;
+}
 .header-content{
   position: absolute;
   display: flex;
@@ -177,10 +186,74 @@ font-size: 15px;
   }
  
 }
-@media (max-width:381px){
-  .header-content h2{
-    font-weight: 400;
-    color: white;
-    font-size: max(2.3vw, 15px);
+
+@media (max-width:580px){
+  .header{
+    display:none;
   }
+  .header-1{
+    display: block;
+  }
+   .header-content{
+    max-width: 65%;
+    bottom: 40%;
+  }
+  .header-1{
+  
+  height: 550px;
+  width: 400px;
+  margin: 30px auto;
+  background: url('/src/assets/interface.webp') no-repeat;
+  background-size: contain;
+  position: relative;
+}
+}
+@media (max-width:471px){
+  .header-1{
+width: 370px;
+  }
+
+}
+@media (max-width:439px){
+  .header-1{
+    width: 100%;
+    height: 500px;
+  }
+
+}
+@media (max-width:426px){
+  .header-1{
+    height: 470px;
+  }
+
+}
+@media (max-width:391px){
+  .header-1{
+    height: 430px;
+  }
+
+}
+@media (max-width:359px){
+  .header-1{
+    height: 410px;
+  }
+
+}
+@media (max-width:351px){
+  .header-1{
+    height: 380px;
+  }
+
+}
+@media (max-width:327px){
+  .header-1{
+    height: 350px;
+  }
+
+}
+@media (max-width:300px){
+  .header-1{
+    height: 300px;
+  }
+
 }

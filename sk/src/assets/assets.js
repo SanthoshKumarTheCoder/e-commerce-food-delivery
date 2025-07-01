@@ -12,7 +12,6 @@ import menu_5 from '/src/assets/menu_5.webp'
 import menu_6 from '/src/assets/menu_6.webp'
 import menu_7 from '/src/assets/menu_7.webp'
 import menu_8 from '/src/assets/menu_8.webp'
-
 import food_1 from '/src/assets/food_1.webp'
 import food_2 from '/src/assets/food_2.webp'
 import food_3 from '/src/assets/food_3.webp'
@@ -61,6 +60,7 @@ import profile_icon from '/src/assets/profile_image.png'
 import bag_icon from '/src/assets/bag_icon.webp'
 import logout_icon from '/src/assets/logout_icon.webp'
 import parcel_icon from '/src/assets/parcel_icon.webp'
+import userimg from '/src/assets/user1233.png'
 
 export const assets = {
     logo,
@@ -83,7 +83,8 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    main_banner
+    main_banner,
+    userimg
 
 }
 

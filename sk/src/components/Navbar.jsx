@@ -33,7 +33,7 @@ navigate("/")
         </div>
         {/* <img src={assets.basket_icon} alt="" className="basketicon" /> */}
         {!token?<button onClick={()=>setShowLogin(true)} className='navbar-button'>sign in</button>:<div className='navbar-profile'>
-          <img src={assets.profile_icon} alt=''/>
+          <img src={assets.userimg} className='userimg-11' alt=''/>
            <img src={assets.profile_image} alt="" />
           <ul className='nav-profile-dropdown'>
             <li onClick={()=>navigate('/myorder')}> <img src={assets.bag_icon} alt=''/><p>orders</p></li>

@@ -30,8 +30,8 @@
     border-radius: 50%;
     transition: 0.2s;
 }
-.basketicon{
-    
+.userimg-11{
+    width: 40px;
 }
 .explore-menu-item p{
     color: #747474;
@@ -353,6 +353,7 @@ width: 50px;
     justify-content: space-between;
     gap: 50px;
     margin-top: 100px;
+    
 }
 
 .place-order-left{
@@ -504,6 +505,11 @@ color: #454545;
     .cart-promocode{
         justify-content: start;
     }
+}
+@media (max-width:4930px) {
+.place-order{
+    flex-wrap: wrap;
+}
 }
 @media (max-width:460px) {
     
